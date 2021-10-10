@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -52,10 +53,39 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
 
               ),
-              Container(
-                height: 200,
-                  width: 250,
-                  child: Image.asset("assets/images/imge4.jpeg")),
+              SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
+                child: Row(
+                  children: [
+                    Container(
+                      height: 200,
+                        width: 250,
+                        child: Image.asset("assets/images/imge4.jpeg")
+                    ),
+                    Container(
+                        height: 200,
+                        width: 250,
+                        child: Image.asset("assets/images/imge4.jpeg")
+                    ),
+                    Container(
+                        height: 200,
+                        width: 250,
+                        child: Image.asset("assets/images/imge4.jpeg")
+                    ),
+                    Container(
+                        height: 200,
+                        width: 250,
+                        child: Image.asset("assets/images/imge4.jpeg")
+                    ),
+                    Container(
+                        height: 200,
+                        width: 250,
+                        child: Image.asset("assets/images/imge4.jpeg")
+                    ),
+
+                  ],
+                ),
+              ),
             ],
           ),
         ),

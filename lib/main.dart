@@ -1,3 +1,4 @@
+import 'package:akhtar/second_page.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -34,6 +35,12 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Center(
           child: Column(
             children: [
+              ElevatedButton(
+                  onPressed:(){
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=>SecondPage())) ;
+                  },
+                  child:Text("Go To Second page")
+              ),
               RaisedButton(
                   color: Colors.purple,
                   child: Text(btnText1),

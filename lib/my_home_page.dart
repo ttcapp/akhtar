@@ -1,4 +1,6 @@
 import 'package:akhtar/second_page.dart';
+import 'package:akhtar/utills/all_colors.dart';
+import 'package:akhtar/utills/all_strings.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 String avatarSrc= "https://i.pinimg.com/474x/82/ab/35/82ab3533ee71daf256f23c1ccf20ad6f--avatar-maker.jpg";
@@ -19,7 +21,8 @@ class _MyHomePageState extends State<MyHomePage> {
         appBar: AppBar(
           backgroundColor: Colors.purple,
           centerTitle: true,
-          title: Text("AKHTARUZ ZAMAN"),
+
+          title: Text(Allstrings.akhtaruzZaman),
         ),
         body: Container(
           decoration: BoxDecoration(
@@ -68,7 +71,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                     fontSize: width*0.055,
                                     color: Colors.black
                                 ),),
-                                Text("Posts")
+                                Text(Allstrings.post3617)
                               ],
                             ),
                             Spacer(),
@@ -81,7 +84,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                     fontSize: width*0.055,
                                     color: Colors.black
                                 ),),
-                                Text("Followers")
+                                Text(Allstrings.followings3_5k)
                               ],
                             ),
                             Spacer(),
@@ -95,7 +98,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                     fontSize: width*0.055,
                                     color: Colors.black
                                 ),),
-                                Text("Comments")
+                                Text(Allstrings.comment100k)
                               ],
                             ),
                             Spacer(),
@@ -155,7 +158,7 @@ class _MyHomePageState extends State<MyHomePage> {
                    Navigator.push(context,
                    MaterialPageRoute(builder: (context)=>SecondPage()));
                   },
-                  child: Text("go to next page")
+                  child: Text(Allstrings.gotonextpage)
               )
             ],
           ),
